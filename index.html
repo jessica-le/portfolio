@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jessica le</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+    // rotating bullet points
+    const bullets = ['🍒', '⭐', '✦', '🌻', '❀'];
+    
+    // Pick a random bullet when page loads
+    const randomBullet = bullets[Math.floor(Math.random() * bullets.length)];
+    
+    // Create a style element and inject it
+    const style = document.createElement('style');
+    style.textContent = `ul li:before { content: "${randomBullet}"; }`;
+    document.head.appendChild(style);
+</script>
+
+<body>
+    <header>
+        <div class="site-title"><a href="index.html">✦ jessica le</a></div>
+        <nav class="top-nav">
+            <a href="past.html">work</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🌸 jessica le</h1>
+        <p class="tagline">management consultant · designer · poet · making things that help people understand complex ideas</p>
+
+        <section>
+            <h2>now</h2>
+            <ul>
+                 <li>senior management consultant at <a href="https://kpmg.com/ca/en/home.html">kpmg</a>, designing frameworks and service blueprints for government and fintech clients</li>
+                <li>leading pmo for a multi-year tech implementation at a major real estate company—redesigning project execution plans, analyzing critical paths, coordinating 7-8 workstreams</li>
+                <li>exploring product management through financial modeling, building small apps for friends, and learning how strategy translates into shipped features</li>
+                <li><a href="https://noodledesk.net/comic/">drawing comics</a>, running a <a href="https://noodledesk.tumblr.com">notion resources community</a> with 27k followers, learning how to code</li>
+                <li>writing poetry and <a href="https://dessin.substack.com">blogging about joy and creative practice</a></li>
+                <li>based in toronto, available for creative projects and collaborations</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>recent work</h2>
+           <ul>
+                <li><a href="project-kernel.html">kernel magazine cover design</a>, editorial illustration · <span class="year">2023</span></li>
+                <li><a href="project-oxford.html">enterprise tech implementation</a>, pmo & project strategy · <span class="year">2024–ongoing</span></li>
+                <li><a href="project-govt.html">government digital transformation</a>, service design & user research · <span class="year">2024</span></li>
+                <li><a href="project-td.html">wealth management strategy</a>, framework design & product vision · <span class="year">2023</span></li>
+                <li><a href="illustration.html">comics & illustration</a>, personal work · <span class="year">ongoing</span></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

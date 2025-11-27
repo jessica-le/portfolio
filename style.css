@@ -1,0 +1,221 @@
+/* font stuff */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: 'Karla', sans-serif;    
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #fafafa;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .site-title {
+ font-family: 'Space Mono', monospace;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+/* Header Navigation */
+header {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.site-title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.site-title a {
+    border: none;
+}
+
+.site-title a:hover {
+    color: #ff6b9d;
+}
+
+.top-nav a {
+    margin-left: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Typography - Better Hierarchy */
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+}
+
+.tagline {
+    margin-bottom: 3rem;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    margin-top: 3rem;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    margin-top: 2rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    line-height: 1.7;
+}
+
+/* Links */
+a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 1.5px solid #1a1a1a;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: #63acb6;
+    border-bottom-color: #ffa136;
+}
+
+/* Lists with cute bullets */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    padding-left: 1.75rem;
+    position: relative;
+    line-height: 1.7;
+}
+
+ul li:before {
+    content: var(--bullet, "🍒");
+    position: absolute;
+    left: 0;
+    font-size: 0.9rem;
+}
+
+/* Date/year styling - lighter gray */
+.year {
+    color: #999;
+}
+
+/* You can also make them slightly smaller if you want */
+.year {
+    color: #999;
+    font-size: 0.95em;
+}
+
+/* Or even more subtle */
+.year {
+    color: #aaa;
+    font-size: 0.93em;
+    font-weight: 400;
+}
+
+/* Indented sections for cleaner hierarchy */
+section {
+    margin-bottom: 3rem;
+}
+
+section ul {
+    margin-left: 0;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    border: none;
+}
+
+.breadcrumb a:hover {
+    border-bottom: 1.5px solid #ff6b9d;
+}
+
+.project-images {
+    margin: 2.5rem 0;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+.caption {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    display: block;
+}
+
+.info-box {
+    background: #f5f5f5;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-left: 3px solid #7ed3ce;
+}
+
+.info-box p {
+    margin-bottom: 0.5rem;
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Publication sections */
+.publication-section {
+    margin-bottom: 2.5rem;
+}
+
+.publication-section h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: #666;
+    text-transform: lowercase;
+}

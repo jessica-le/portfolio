@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transit system redesign · jessica le</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="site-title"><a href="index.html">✦ jessica le</a></div>
+        <nav class="top-nav">
+            <a href="past.html">past</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="breadcrumb"><a href="past.html">← back to past</a></p>
+        
+        <h1>transit system redesign</h1>
+        <span class="meta">information architecture · requirements coordination · <span class="year">2023-24</span> · client under nda</span>
+
+        <section>
+            <p>redesigned the staff intranet and helped coordinate requirements for a major systems upgrade at a municipal transit agency.</p>
+        </section>
+
+        <div class="info-box">
+            <p><strong>my role:</strong> information architecture & requirements coordination</p>
+            <p><strong>team:</strong> worked with it, operations, frontline transit staff</p>
+            <p><strong>timeline:</strong> 12 months</p>
+        </div>
+
+        <section>
+            <h2>the intranet redesign</h2>
+            
+            <p>the existing intranet was outdated and difficult to navigate—information scattered everywhere, unclickable elements, inconsistent updates. basically a website with nothing useful on it.</p>
+            
+            <p>redesigned the information architecture to make it actually functional for staff. organized content by workflows instead of organizational structure. the biggest impact was making onboarding easier for new employees who needed to find information quickly.</p>
+        </section>
+
+        <section>
+            <h2>requirements coordination</h2>
+            
+            <p>helped manage 500+ business requirements across multiple departments for the systems upgrade. our approach was systematic but not revolutionary: excel spreadsheets, categorized decks, lots of workshops with metrolinx and ttc to group and close out requirements.</p>
+            
+            <p>my role was mostly helping my coworker push for alignment and get unstuck when the client kept going in circles. having a second person focused on coordination helped accelerate delivery by about 30%—not through any special framework, just by maintaining momentum and preventing endless loops.</p>
+            
+            <p>we spent the most time on wheel trans (paratransit identification cards), though even that involved significant back-and-forth.</p>
+        </section>
+
+        <section>
+            <h2>what i learned</h2>
+            
+            <p>requirements management is as much about facilitating difficult conversations as it is about documentation. success meant building trust across departments and keeping people aligned when everyone had competing priorities.</p>
+            
+            <p>enterprise systems work often feels less glamorous than product design, but it matters. making daily workflows slightly less frustrating for frontline staff who serve thousands of transit riders—that's real impact, even if it's not revolutionary.</p>
+        </section>
+
+        <div class="bottom-nav">
+            <a href="project-kernel.html">next: kernel magazine →</a>
+        </div>
+    </main>
+
+    <script>
+        // rotating bullet points
+        const bullets = ['🍒', '⭐', '✦', '🌻', '❀'];
+        
+        // Pick a random bullet when page loads
+        const randomBullet = bullets[Math.floor(Math.random() * bullets.length)];
+        
+        // Create a style element and inject it
+        const style = document.createElement('style');
+        style.textContent = `ul li:before { content: "${randomBullet}"; }`;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

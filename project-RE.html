@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enterprise tech implementation · jessica le</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="site-title"><a href="index.html">✦ jessica le</a></div>
+        <nav class="top-nav">
+            <a href="past.html">past</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="breadcrumb"><a href="past.html">← back to past</a></p>
+        
+        <h1>enterprise tech implementation</h1>
+        <span class="meta">pmo & project strategy · <span class="year">2024–ongoing</span> · client under nda</span>
+
+        <section>
+            <p>leading program management for a multi-year technology implementation at a major canadian real estate company. coordinating 7-8 workstreams, redesigning execution plans, and keeping a complex technical rollout on track.</p>
+        </section>
+
+        <div class="info-box">
+            <p><strong>my role:</strong> program manager (pmo)</p>
+            <p><strong>scope:</strong> multi-workstream coordination, critical path analysis, executive reporting</p>
+            <p><strong>tools:</strong> microsoft project, azure devops, executive dashboards</p>
+        </div>
+
+        <section>
+            <h2>what i'm doing</h2>
+            
+            <p>this is the kind of behind-the-scenes coordination work that determines whether major tech implementations succeed or stall out in endless cycles.</p>
+            
+            <h3>redesigning project execution</h3>
+            <p>overhauled the project execution plan to reflect how work actually flows across teams, not how the org chart says it should. analyzing critical paths to identify bottlenecks before they become blockers.</p>
+            
+            <h3>workstream coordination</h3>
+            <p>working directly with 7-8 workstream product managers to maintain alignment and momentum. organizing meeting cadences that actually help people get work done rather than just creating more meetings.</p>
+            
+            <h3>executive communication</h3>
+            <p>building dashboards and decks that translate technical complexity into clear strategic decisions. analyzing microsoft project schedules and azure devops data to surface insights leadership actually needs.</p>
+        </section>
+
+        <section>
+            <h2>what this taught me about product work</h2>
+            
+            <p>good pmo work is product thinking in disguise. you're constantly asking: what's the minimum viable process? what friction can we remove? how do we ship incrementally instead of waiting for perfect?</p>
+            
+            <p>the best frameworks emerge from watching how teams actually work, then designing systems that support that reality. same principle whether you're managing a tech rollout or building a product feature.</p>
+        </section>
+
+        <div class="bottom-nav">
+            <a href="project-govt.html">next: government digital transformation →</a>
+        </div>
+    </main>
+
+    <script>
+        const bullets = ['🍒', '⭐', '✦', '🌸', '❀', '✧', '◆'];
+        document.addEventListener('DOMContentLoaded', function() {
+            const listItems = document.querySelectorAll('ul li');
+            listItems.forEach(li => {
+                const randomBullet = bullets[Math.floor(Math.random() * bullets.length)];
+                li.style.setProperty('--bullet', `"${randomBullet}"`);
+            });
+        });
+    </script>
+</body>
+</html>
