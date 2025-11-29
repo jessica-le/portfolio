@@ -10,13 +10,13 @@
     <header>
         <div class="site-title"><a href="index.html">✦ jessica le</a></div>
         <nav class="top-nav">
-            <a href="past.html">past</a>
+            <a href="past.html">work</a>
             <a href="contact.html">contact</a>
         </nav>
     </header>
 
     <main>
-        <p class="breadcrumb"><a href="past.html">← back to past</a></p>
+        <p class="breadcrumb"><a href="past.html">← back to work</a></p>
         
         <h1>enterprise tech implementation</h1>
         <span class="meta">pmo & project strategy · <span class="year">2024–ongoing</span> · client under nda</span>
@@ -59,15 +59,17 @@
         </div>
     </main>
 
-    <script>
-        const bullets = ['🍒', '⭐', '✦', '🌸', '❀', '✧', '◆'];
-        document.addEventListener('DOMContentLoaded', function() {
-            const listItems = document.querySelectorAll('ul li');
-            listItems.forEach(li => {
-                const randomBullet = bullets[Math.floor(Math.random() * bullets.length)];
-                li.style.setProperty('--bullet', `"${randomBullet}"`);
-            });
-        });
-    </script>
+<script>
+    // rotating bullet points
+    const bullets = ['🍒', '⭐', '✦', '🌻', '❀'];
+    
+    // Pick a random bullet when page loads
+    const randomBullet = bullets[Math.floor(Math.random() * bullets.length)];
+    
+    // Create a style element and inject it
+    const style = document.createElement('style');
+    style.textContent = `ul li:before { content: "${randomBullet}"; }`;
+    document.head.appendChild(style);
+</script>
 </body>
 </html>

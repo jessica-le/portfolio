@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selected illustration work · jessica le</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="site-title"><a href="index.html">✦ jessica le</a></div>
+        <nav class="top-nav">
+            <a href="past.html">work</a>
+            <a href="contact.html">contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <p class="breadcrumb"><a href="past.html">← back to work</a></p>
+        
+        <h1>selected illustration</h1>
+        <span class="meta">finished work · <span class="year">and comics!</span></span>
+
+        <section>
+            <p>below is a collection of finished personal and professional illustration and comic work. I also post my comics on my <a href="https://noodledesk.net/comic/">website.</a></p>
+        </section>
+
+        <div class="info-box">
+            <p><strong>hi!</strong> thanks for taking a look at my illustration work. if you'd like to work together, please email me at <i><strong>jessicajiexile at gmail.com.</strong></i></p>
+        </div>
+
+        <div class="project-images">
+            <img src="images/kernelcover.jpg" alt="Kernel Magazine Issue 2 front cover" />
+            
+            <img src="images/kernelbackcover.jpg" alt="Kernel Magazine Issue 2 back cover" />
+            
+            <img src="images/porco_rosso.png" alt="Porco Rosso Painting" />
+
+            <img src="images/2025-01-29 comic for brian.png" alt="Porco Rosso Painting" />
+
+            <img src="images/2025-04-13-fart.png" alt="Porco Rosso Painting" />
+
+
+        </div>
+
+
+        <section>
+            <h2>tools</h2>
+            <p>clip studio paint, adobe photoshop, midori a5</p>
+        </section>
+
+        <div class="bottom-nav">
+            <a href="project-RE.html">next: enterprise tech implementation →</a>
+        </div>
+    </main>
+
+    <script>
+        const bullets = ['🍒', '⭐', '✦', '🌸', '❀', '✧', '◆'];
+        document.addEventListener('DOMContentLoaded', function() {
+            const listItems = document.querySelectorAll('ul li');
+            listItems.forEach(li => {
+                const randomBullet = bullets[Math.floor(Math.random() * bullets.length)];
+                li.style.setProperty('--bullet', `"${randomBullet}"`);
+            });
+        });
+    </script>
+</body>
+</html>
